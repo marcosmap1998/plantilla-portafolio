@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu{
+    padding: 20px;
+    margin: 20px;
+    flex: 1 1 auto;
+    align-self: flex-end;
+}
+
+.menu a{
+    padding: 10px;
+    margin-right: 10px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+}
+
+.nombre{
+    padding: 20px;
+    flex: 1 1 auto;
+    align-self: center;
+}
+
+
+.ocupacion{
+    margin-bottom: 50px;
+    flex: 1 1 auto;
+    align-self: center;
+}
+
+.contenedor{   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor .acerca-de{
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.acerca-de .titulo-acerca{
+    padding: 20px;
+    margin: 20px auto;
+    flex: 1 1 auto;
+}
+
+.acerca-de .desc-acerca{
+    align-self: center;
+    margin-bottom: 50px;
+    text-align: center;
+    flex: 1 1 auto;
+}
+
+.contenedor .trabajos{
+    background-color: grey;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 auto;
+}
+
+.trabajos .titulo-trabajos{
+    padding: 20px;
+    margin-top: 20px;
+    align-self: center;
+    flex: 1 1 auto;
+}
+
+.trabajos .evidencia{
+    width: 75%;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    flex: 1 1 auto;
+}
+
+.evidencia .trabajo{
+    width: 20%;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.trabajo .imagen{
+    flex: 1 1 auto;
+}
+
+.trabajo .imagen img{
+    width: 200px;
+    height: 200px;
+}
+
+.formulario{
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulario .titulo-contacto{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.formulario .info{
+    width: 75%;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formulario .info .nombre{
+    width: 50%;
+    align-self: center;
+    flex: 1 1 auto;
+}
+
+.formulario .info .nombre input{   
+    width: 100%;
+    height: 30px;
+}
+
+.formulario .info .mail{
+    width: 50%;
+    align-self: center;
+    flex: 1 1 auto;
+}
+
+.formulario .info .mail input{
+    width: 100%;
+    height: 30px;
+}
+
+.formulario .mensaje{
+    width: 75%;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.formulario .mensaje textarea{
+    width: 100%;
+    height: 100px;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100px;
+    min-height: 100px;
+}
+
+.formulario .boton{
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.formulario .boton input{
+    width: 150px;
+    height: 50px;
+    font-size: medium;
+}
+
+@media screen and (max-width:800px){
+    .trabajos .evidencia{
+        width: 100%;
+    }
+
+    
+
+}
+
+@media screen and (max-width:600px){
+
+    .trabajos .evidencia{
+        width: 100%;
+    }
+
+    .evidencia .trabajo{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:400px){
+    .menu{
+        width: 100%;
+        align-self: center;
+    }
+
+    .trabajos .evidencia{
+        width: 100%;
+    }
+
+    .evidencia .trabajo{
+        padding: 20px;
+        width: 30%;
+    }
+
+}
+
